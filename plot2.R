@@ -11,6 +11,6 @@ df <-df[df$Date=="1/2/2007" | df$Date=="2/2/2007",]
 x <- strptime(paste(df$Date, df$Time), format='%d/%m/%Y %H:%M:%S')
 
 # Plot the graph
-png(filename = "plot1.png")
+png(filename = "plot2.png")
 plot(x, df$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
