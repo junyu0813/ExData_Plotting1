@@ -1,5 +1,5 @@
 # In this program,  the data“Individual household electric power consumption Data Set” will be used. 
-# Plot2 is to plot the household energy usage varies over a 2-day period in February, 2007.
+# Plot2 is to plot Global Active Power over a 2-day period in February, 2007.
 
 # set default directory
 setwd("C:/Users/Junyu/Documents/GitHub/ExData_Plotting1")
