@@ -23,15 +23,15 @@ png(filename = "plot4.png")
 par(mfrow=c(2, 2))
 
 #plot1
-hist(gap, main="Global Active Power", col="red", xlab="Global Active Power (kilowatts)")
-# plot2
 plot(x, df[,3], type="l", xlab="", ylab="Global Active Power (kilowatts)")
+#plot2
+plot(x, df[,5], type="l", xlab="datetime", ylab="Voltage")
 #plot3
 plot(x, df[,7], type="l", xlab="", ylab="Energy sub metering")
 points(x, df[,8], type="l", col="red")
 points(x, df[,9], type="l", col="blue")
 legend("topright",legend = leg.tex, pch="_", text.col=c("black", "red", "blue"))
 #plot4
-plot(x, df[,4], type="l", xlab="", ylab="Global Active Power (kilowatts)")
+plot(x, df[,4], type="l", xlab="datetime", ylab="Global_rective_power (kilowatts)")
 # Turn off
 dev.off()
